@@ -4,7 +4,7 @@ import { SlSocialFacebook , SlSocialLinkedin } from "react-icons/sl";
 import { SiUpwork } from "react-icons/si";
 import { FiGithub, FiYoutube } from "react-icons/fi";
 
-import Logo from "../assets/Logo.png";
+
 
 export default function Footer() {
   return (
@@ -19,7 +19,7 @@ export default function Footer() {
             
             <div className="mb-4 flex justify-center items-center space-x-4">
               <img
-                src={`${Logo}`}
+                src="/Logo.png"
                 alt="logo"
                 className="w-16 h-16"
               />

@@ -1,11 +1,10 @@
 import React from "react";
-import FreeLance from "../assets/FreelanceSection.jpg";
 
 export default function Freelance() {
   return (
     <section
       className="relative h-72 flex items-center justify-center bg-center bg-cover shadow-[0_0_30px_rgba(59,130,246,0.7)] dark:shadow-[0_0_30px_rgba(245,158,11,0.7)]"
-      style={{ backgroundImage: `url("${FreeLance}")` }}
+      style={{ backgroundImage: `url("/FreelanceSection.jpg")` }}
     >
       {/* Overlay for readability */}
       <div className="absolute inset-0 bg-black/50"></div>

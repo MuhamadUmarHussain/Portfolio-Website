@@ -6,10 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade"; // for fade effect
 
-import HeroImage from "../assets/main.png";
-import BackEnd from "../assets/BackEnd.webp";
-import FrontEnd from "../assets/FrontEnd.png";
-import Content from "../assets/Content.jpg";
+
 
 export default function HeroSection() {
   return (
@@ -34,9 +31,9 @@ export default function HeroSection() {
 
     {/* Background Image for Mobile */}
     <div
-      className="absolute inset-0 lg:hidden bg-cover bg-center mt-6 "
-      style={{ backgroundImage: `url(${HeroImage})` }}
-    >
+        className="absolute inset-0 lg:hidden bg-cover bg-center mt-6"
+        style={{ backgroundImage: `url(/main.png)` }}
+      >
       <div className="absolute inset-0 bg-black/40 "></div>
     </div>
 
@@ -74,7 +71,7 @@ export default function HeroSection() {
     <div className="hidden lg:flex relative w-1/2 h-full justify-end items-center z-10 mt-8">
       <div
         className="w-full h-full bg-contain bg-no-repeat bg-right md:rounded-l-3xl "
-        style={{ backgroundImage: `url(${HeroImage})` }}
+        style={{ backgroundImage: `url(/main.png)` }}
       >
         <div className="absolute inset-0 bg-gradient-to-t from-black/30 md:from-transparent"></div>
       </div>
@@ -89,7 +86,7 @@ export default function HeroSection() {
         <SwiperSlide>
           <div className="flex flex-col items-center justify-center h-full px-4 text-center bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 dark:from-gray-800 dark:to-gray-900 transition-all duration-700 ">
             <img
-              src={`${FrontEnd}`}
+              src="/FrontEnd.png"
               alt="Front-End Development"
               className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-full shadow-lg mb-4 motion-preset-pulse"
             />
@@ -108,7 +105,7 @@ export default function HeroSection() {
         <SwiperSlide>
           <div className="flex flex-col items-center justify-center h-full px-4 text-center bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-700 dark:from-gray-800 dark:to-gray-900 transition-all duration-700">
             <img
-              src={`${BackEnd}`}
+              src="BackEnd.webp"
               alt="Back-End Development"
               className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-full shadow-lg mb-4 motion-preset-pulse "
             />
@@ -127,7 +124,7 @@ export default function HeroSection() {
         <SwiperSlide>
           <div className="flex flex-col items-center justify-center h-full px-4 text-center bg-gradient-to-r from-green-400 via-emerald-500 to-teal-600 dark:from-gray-800 dark:to-gray-900 transition-all duration-700">
             <img
-              src={`${Content}`}
+              src="Content.jpg"
               alt="Content Creation"
               className="w-28 h-28 sm:w-36 sm:h-36 md:w-48 md:h-48 rounded-full shadow-lg mb-4  motion-preset-pulse"
             />

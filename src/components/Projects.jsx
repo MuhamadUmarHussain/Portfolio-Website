@@ -1,102 +1,87 @@
 import React, { useState, useEffect } from "react";
 import Modal from "./Modal";
-
-// Assets
 import { Github } from "lucide-react";
-
-import DashBoard from "../assets/Student-Management-System/Dashboard.png";
-import AdminPannel from "../assets/Student-Management-System/AdminPannel.png";
-import UserPannel from "../assets/Student-Management-System/UserPannel.png";
-import UserData from "../assets/Student-Management-System/UserData.png";
-
-import Signup from "../assets/Leave-Management-System/Signup.png";
-import Login from "../assets/Leave-Management-System/Login.png";
-import Dashboard from "../assets/Leave-Management-System/Dashboard.png";
-import AddMember from "../assets/Leave-Management-System/Add Member.png";
-import RemoveMember from "../assets/Leave-Management-System/RemoveMembers.png";
-import TeamData from "../assets/Leave-Management-System/team data.png";
-
-import Res1 from "../assets/Responsive/ResponsiveDesign1.png";
-import Res2 from "../assets/Responsive/ResponsiveDesign2.png";
-import Res3 from "../assets/Responsive/ResponsiveDesign3.png";
-
-import AdminDashboard from "../assets/Hall-Management-System/AdminDashboard.png";
-import BookingManagment from "../assets/Hall-Management-System/BookingManagment.png";
-import HallManagment from "../assets/Hall-Management-System/HallManagment.png";
-import ReportManagment from "../assets/Hall-Management-System/ReportManagment.png";
-import ServicesDiscount from "../assets/Hall-Management-System/Services&Discount.png";
-import UserManagement from "../assets/Hall-Management-System/UserManagement.png";
-import UserDashboard from "../assets/Hall-Management-System/UserDashboard.png";
-import Booking from "../assets/Hall-Management-System/Booking.png";
-import FeedBack from "../assets/Hall-Management-System/FeedBack.png";
-import Services from "../assets/Hall-Management-System/Services.png";
-import Packages from "../assets/Hall-Management-System/Packages.png";
-import Payments from "../assets/Hall-Management-System/Payments.png";
-
-import Userpannel from "../assets/Digital-Library/UserPannel.png";
-import SearchBooks from "../assets/Digital-Library/SearchBooks.png";
-import BorrowedBooks from "../assets/Digital-Library/BorrowedBooks.png";
-import Adminpannel from "../assets/Digital-Library/AdminPannel.png";
-import AddBooks from "../assets/Digital-Library/AddBooks.png";
-import RemoveBooks from "../assets/Digital-Library/RemoveBooks.png";
-import Removemember from "../assets/Digital-Library/RemoveMember.png";
-
-import Main from "../assets/Youtube-Comment-Analyzer/Main.png";
-import Features from "../assets/Youtube-Comment-Analyzer/Features.png";
-import Working from "../assets/Youtube-Comment-Analyzer/Working.png";
-import About from "../assets/Youtube-Comment-Analyzer/About.png";
-import SignUp from "../assets/Youtube-Comment-Analyzer/Signup.png";
-import LogIn from "../assets/Youtube-Comment-Analyzer/Login.png";
-import Data from "../assets/Youtube-Comment-Analyzer/Data.jpg";
 
 const projects = [
   {
     title: "Intelligent Youtube Comment Analyzer",
     category: "Python - Machine Learning",
-    src: [Main, Features, Working, About, SignUp, LogIn, Data],
+    src: [
+      "/Youtube-Comment-Analyzer/Main.PNG",
+      "/Youtube-Comment-Analyzer/Features.PNG",
+      "/Youtube-Comment-Analyzer/Working.PNG",
+      "/Youtube-Comment-Analyzer/About.PNG",
+      "/Youtube-Comment-Analyzer/Signup.png",
+      "/Youtube-Comment-Analyzer/Login.png",
+      "/Youtube-Comment-Analyzer/Data.jpg",
+    ],
     github: "https://github.com/SM649/Intelligent-Youtube-Comment-Analyzer.git",
   },
   {
     title: "Break Management System",
     category: "Web App - PHP/MySql",
-    src: [Signup, Login, Dashboard, AddMember, RemoveMember, TeamData],
+    src: [
+      "/Leave-Management-System/Signup.PNG",
+      "/Leave-Management-System/Login.PNG",
+      "/Leave-Management-System/Dashboard.PNG",
+      "/Leave-Management-System/Add Member.PNG",
+      "/Leave-Management-System/RemoveMembers.PNG",
+      "/Leave-Management-System/team data.PNG",
+    ],
     github: "https://github.com/MuhamadUmarHussain/Break_Management_System.git",
   },
   {
     title: "Responsive Web Design",
     category: "HTML/CSS/JS - Tailwind/Bootstrap",
-    src: [Res1, Res2, Res3],
+    src: [
+      "/Responsive/ResponsiveDesign1.PNG",
+      "/Responsive/ResponsiveDesign2.PNG",
+      "/Responsive/ResponsiveDesign3.PNG",
+    ],
     github: "https://github.com/MuhamadUmarHussain/Responsive-Tailwind-design.git",
   },
   {
     title: "Student Management System",
     category: "Console App - DSA",
-    src: [DashBoard, AdminPannel, UserPannel, UserData],
+    src: [
+      "/Student-Management-System/Dashboard.PNG",
+      "/Student-Management-System/AdminPannel.PNG",
+      "/Student-Management-System/UserPannel.PNG",
+      "/Student-Management-System/UserData.PNG",
+    ],
     github: "https://github.com/MuhamadUmarHussain/Student_Management_System_DSA.git",
   },
   {
     title: "Hall Management System",
     category: ".Net - Application",
     src: [
-      AdminDashboard,
-      BookingManagment,
-      HallManagment,
-      ReportManagment,
-      ServicesDiscount,
-      UserManagement,
-      UserDashboard,
-      Booking,
-      FeedBack,
-      Services,
-      Packages,
-      Payments,
+      "/Hall-Management-System/AdminDashboard.PNG",
+      "/Hall-Management-System/BookingManagment.PNG",
+      "/Hall-Management-System/HallManagment.PNG",
+      "/Hall-Management-System/ReportManagment.PNG",
+      "/Hall-Management-System/Services&Discount.PNG",
+      "/Hall-Management-System/UserManagement.PNG",
+      "/Hall-Management-System/UserDashboard.PNG",
+      "/Hall-Management-System/Booking.PNG",
+      "/Hall-Management-System/FeedBack.PNG",
+      "/Hall-Management-System/Services.PNG",
+      "/Hall-Management-System/Packages.PNG",
+      "/Hall-Management-System/Payments.PNG",
     ],
     github: "https://github.com/MuhamadUmarHussain/Hall-Management-System---Front-End",
   },
   {
     title: "Digital Library",
     category: "Web App - PHP/MySql",
-    src: [SearchBooks, Userpannel, BorrowedBooks, Adminpannel, AddBooks, RemoveBooks, Removemember],
+    src: [
+      "/Digital-Library/SearchBooks.png",
+      "/Digital-Library/UserPannel.png",
+      "/Digital-Library/BorrowedBooks.png",
+      "/Digital-Library/AdminPannel.png",
+      "/Digital-Library/AddBooks.png",
+      "/Digital-Library/RemoveBooks.png",
+      "/Digital-Library/RemoveMember.png",
+    ],
     github: "https://github.com/MuhamadUmarHussain/Digital-Library.git",
   },
 ];
@@ -105,7 +90,14 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentImg, setCurrentImg] = useState(0);
 
-  const colSpanPattern = ["md:col-span-2", "md:col-span-1", "md:col-span-1", "md:col-span-2", "md:col-span-2", "md:col-span-1"];
+  const colSpanPattern = [
+    "md:col-span-2",
+    "md:col-span-1",
+    "md:col-span-1",
+    "md:col-span-2",
+    "md:col-span-2",
+    "md:col-span-1",
+  ];
 
   const handleCardClick = (proj) => {
     setSelectedProject(proj);
@@ -115,10 +107,14 @@ export default function Projects() {
   const handleClose = () => setSelectedProject(null);
 
   const handleNext = () =>
-    setCurrentImg((prev) => (prev === selectedProject.src.length - 1 ? 0 : prev + 1));
+    setCurrentImg((prev) =>
+      prev === selectedProject.src.length - 1 ? 0 : prev + 1
+    );
 
   const handlePrev = () =>
-    setCurrentImg((prev) => (prev === 0 ? selectedProject.src.length - 1 : prev - 1));
+    setCurrentImg((prev) =>
+      prev === 0 ? selectedProject.src.length - 1 : prev - 1
+    );
 
   // 🔑 Keyboard navigation
   useEffect(() => {
@@ -140,7 +136,8 @@ export default function Projects() {
       >
         <div className="max-w-6xl mx-auto px-6 lg:px-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
-            My <span className="text-blue-600 dark:text-amber-500">Projects</span>
+            My{" "}
+            <span className="text-blue-600 dark:text-amber-500">Projects</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -159,8 +156,12 @@ export default function Projects() {
                     className="w-full h-34 md:h-80 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gray-950/30 backdrop-blur-md opacity-0 group-hover:opacity-100 transition duration-300 flex flex-col justify-center items-center px-4">
-                    <h3 className="text-2xl font-semibold text-blue-600 dark:text-amber-600">{proj.title}</h3>
-                    <p className="mt-2 text-sm text-black dark:text-white font-semibold">{proj.category}</p>
+                    <h3 className="text-2xl font-semibold text-blue-600 dark:text-amber-600">
+                      {proj.title}
+                    </h3>
+                    <p className="mt-2 text-sm text-black dark:text-white font-semibold">
+                      {proj.category}
+                    </p>
                   </div>
                 </div>
               );

@@ -1,6 +1,5 @@
 import React from "react";
 import { FaUser, FaEnvelope, FaPhone, FaMapMarkerAlt, FaDownload } from "react-icons/fa";
-import ProfilePic from "../assets/AboutPicture.png"; // replace with your image
 
 
 import CountUp from "react-countup";
@@ -97,7 +96,7 @@ export default function AboutMe() {
           <div className="md:w-2/5 flex justify-center">
             <div className="w-48 h-48 md:w-64 md:h-64 overflow-hidden hidden md:block">
               <img
-                src={ProfilePic}
+                src="/AboutPicture.png"
                 alt="Profile"
                 className="w-full h-full object-contain mask-image"
               />
