@@ -4,50 +4,50 @@ import Modal from "./Modal";
 // Assets
 import { Github } from "lucide-react";
 
-import DashBoard from "../assets/Student Management System/Dashboard.png";
-import AdminPannel from "../assets/Student Management System/AdminPannel.png";
-import UserPannel from "../assets/Student Management System/UserPannel.png";
-import UserData from "../assets/Student Management System/UserData.png";
+import DashBoard from "../assets/Student-Management-System/Dashboard.png";
+import AdminPannel from "../assets/Student-Management-System/AdminPannel.png";
+import UserPannel from "../assets/Student-Management-System/UserPannel.png";
+import UserData from "../assets/Student-Management-System/UserData.png";
 
-import Signup from "../assets/Leave_Management_System/Signup.png";
-import Login from "../assets/Leave_Management_System/Login.png";
-import Dashboard from "../assets/Leave_Management_System/Dashboard.png";
-import AddMember from "../assets/Leave_Management_System/Add Member.png";
-import RemoveMember from "../assets/Leave_Management_System/RemoveMembers.png";
-import TeamData from "../assets/Leave_Management_System/team data.png";
+import Signup from "../assets/Leave-Management-System/Signup.png";
+import Login from "../assets/Leave-Management-System/Login.png";
+import Dashboard from "../assets/Leave-Management-System/Dashboard.png";
+import AddMember from "../assets/Leave-Management-System/Add Member.png";
+import RemoveMember from "../assets/Leave-Management-System/RemoveMembers.png";
+import TeamData from "../assets/Leave-Management-System/team data.png";
 
 import Res1 from "../assets/Responsive/ResponsiveDesign1.png";
 import Res2 from "../assets/Responsive/ResponsiveDesign2.png";
 import Res3 from "../assets/Responsive/ResponsiveDesign3.png";
 
-import AdminDashboard from "../assets/Hall Management System/AdminDashboard.png";
-import BookingManagment from "../assets/Hall Management System/BookingManagment.png";
-import HallManagment from "../assets/Hall Management System/HallManagment.png";
-import ReportManagment from "../assets/Hall Management System/ReportManagment.png";
-import ServicesDiscount from "../assets/Hall Management System/Services&Discount.png";
-import UserManagement from "../assets/Hall Management System/UserManagement.png";
-import UserDashboard from "../assets/Hall Management System/UserDashboard.png";
-import Booking from "../assets/Hall Management System/Booking.png";
-import FeedBack from "../assets/Hall Management System/FeedBack.png";
-import Services from "../assets/Hall Management System/Services.png";
-import Packages from "../assets/Hall Management System/Packages.png";
-import Payments from "../assets/Hall Management System/Payments.png";
+import AdminDashboard from "../assets/Hall-Management-System/AdminDashboard.png";
+import BookingManagment from "../assets/Hall-Management-System/BookingManagment.png";
+import HallManagment from "../assets/Hall-Management-System/HallManagment.png";
+import ReportManagment from "../assets/Hall-Management-System/ReportManagment.png";
+import ServicesDiscount from "../assets/Hall-Management-System/Services&Discount.png";
+import UserManagement from "../assets/Hall-Management-System/UserManagement.png";
+import UserDashboard from "../assets/Hall-Management-System/UserDashboard.png";
+import Booking from "../assets/Hall-Management-System/Booking.png";
+import FeedBack from "../assets/Hall-Management-System/FeedBack.png";
+import Services from "../assets/Hall-Management-System/Services.png";
+import Packages from "../assets/Hall-Management-System/Packages.png";
+import Payments from "../assets/Hall-Management-System/Payments.png";
 
-import Userpannel from "../assets/Digital Library/UserPannel.png";
-import SearchBooks from "../assets/Digital Library/SearchBooks.png";
-import BorrowedBooks from "../assets/Digital Library/BorrowedBooks.png";
-import Adminpannel from "../assets/Digital Library/AdminPannel.png";
-import AddBooks from "../assets/Digital Library/AddBooks.png";
-import RemoveBooks from "../assets/Digital Library/RemoveBooks.png";
-import Removemember from "../assets/Digital Library/RemoveMember.png";
+import Userpannel from "../assets/Digital-Library/UserPannel.png";
+import SearchBooks from "../assets/Digital-Library/SearchBooks.png";
+import BorrowedBooks from "../assets/Digital-Library/BorrowedBooks.png";
+import Adminpannel from "../assets/Digital-Library/AdminPannel.png";
+import AddBooks from "../assets/Digital-Library/AddBooks.png";
+import RemoveBooks from "../assets/Digital-Library/RemoveBooks.png";
+import Removemember from "../assets/Digital-Library/RemoveMember.png";
 
-import Main from "../assets/Youtube Comment Analyzer/Main.png";
-import Features from "../assets/Youtube Comment Analyzer/Features.png";
-import Working from "../assets/Youtube Comment Analyzer/Working.png";
-import About from "../assets/Youtube Comment Analyzer/About.png";
-import SignUp from "../assets/Youtube Comment Analyzer/Signup.png";
-import LogIn from "../assets/Youtube Comment Analyzer/Login.png";
-import Data from "../assets/Youtube Comment Analyzer/Data.jpg";
+import Main from "../assets/Youtube-Comment-Analyzer/Main.png";
+import Features from "../assets/Youtube-Comment-Analyzer/Features.png";
+import Working from "../assets/Youtube-Comment-Analyzer/Working.png";
+import About from "../assets/Youtube-Comment-Analyzer/About.png";
+import SignUp from "../assets/Youtube-Comment-Analyzer/Signup.png";
+import LogIn from "../assets/Youtube-Comment-Analyzer/Login.png";
+import Data from "../assets/Youtube-Comment-Analyzer/Data.jpg";
 
 const projects = [
   {
