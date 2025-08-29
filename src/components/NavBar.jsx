@@ -91,11 +91,11 @@ export default function NavBar() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-4">
-              <span className="text-lg font-semibold text-gray-900 dark:text-gray-100">Menu</span>
+              <span className="text-lg font-semibo    text-orange-500">Menu</span>
               <button
                 onClick={closeMenu}
                 aria-label="Close menu"
-                className="text-2xl leading-none text-black dark:text-gray-200 hover:bg-white/10 dark:hover:bg-gray-800/10 rounded-full w-8 h-8 flex items-center justify-center"
+                className="text-2xl leading-none text-red-600  rounded-full w-8 h-8 flex items-center justify-center"
               >
                 ×
               </button>
@@ -106,7 +106,7 @@ export default function NavBar() {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    className="block rounded-lg px-3 py-2 hover:text-amber-500 hover:bg-white/10 dark:hover:bg-gray-800/10 transition-colors"
+                    className="block rounded-lg px-3 py  transition-colors"
                     onClick={closeMenu}
                   >
                     {l.label}

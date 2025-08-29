@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Contact() {
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -31,9 +32,7 @@ export default function Contact() {
           toast.success("Message sent successfully!");
           form.current.reset();
 
-          // ✅ Prevent focus returning to first input (which causes scroll in DevTools)
           if (document.activeElement) document.activeElement.blur();
-
           setLoading(false);
         },
         (error) => {
@@ -48,7 +47,7 @@ export default function Contact() {
     <section
       id="contacts"
       className="bg-gradient-to-r from-green-100 via-gray-200 to-blue-100 
-                 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 py-20"
+                 dark:from-gray-900 dark:via-gray-800 dark:to-gray-700 py-20 relative"
     >
       <div className="max-w-6xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Left Side - Heading */}
@@ -143,6 +142,19 @@ export default function Contact() {
           </form>
         </div>
       </div>
+
+      {/* ✅ Toast container scoped to contact section */}
+      <ToastContainer
+        position="bottom-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     </section>
   );
 }

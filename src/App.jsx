@@ -9,7 +9,6 @@ import Freelance from "./components/Freelance";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import RevealOnScroll from "./components/RevealOnScroll";
 
 import { FaArrowUp } from "react-icons/fa";
 import { ToastContainer } from "react-toastify";
@@ -86,70 +85,50 @@ export default function App() {
           id="about"
           ref={sectionsRef.About}
           data-title="About Me"
-          className="scroll-mt-2"
         >
-          <RevealOnScroll animation="motion-preset-slide-up">
-            <AboutMe />
-          </RevealOnScroll>
+          <AboutMe />
         </div>
 
         <div
           id="resume"
           ref={sectionsRef.Resume}
           data-title="Resume"
-          className="scroll-mt-2"
         >
-          <RevealOnScroll animation="motion-preset-slide-right">
-            <Resume />
-          </RevealOnScroll>
+          <Resume />
         </div>
 
         <div
           id="services"
           ref={sectionsRef.Service}
           data-title="Services"
-          className="scroll-mt-0"
         >
-          <RevealOnScroll animation="motion-preset-zoom">
-            <Service />
-          </RevealOnScroll>
+          <Service />
         </div>
 
         <div
           id="skills"
           ref={sectionsRef.Skills}
           data-title="My Skills"
-          className="scroll-mt-2"
         >
-          <RevealOnScroll animation="motion-preset-bounce">
-            <MySkills />
-          </RevealOnScroll>
+          <MySkills />
         </div>
 
-        <RevealOnScroll animation="motion-preset-fade">
-          <Freelance />
-        </RevealOnScroll>
+        <Freelance />
 
         <div
           id="projects"
           ref={sectionsRef.Projects}
           data-title="Projects"
-          className="scroll-mt-2"
         >
-          <RevealOnScroll animation="motion-preset-slide-left">
-            <Projects />
-          </RevealOnScroll>
+          <Projects />
         </div>
 
         <div
           id="contacts"
           ref={sectionsRef.Contact}
           data-title="Contact"
-          className="scroll-mt-2"
         >
-          <RevealOnScroll animation="motion-preset-slide-up">
-            <Contact />
-          </RevealOnScroll>
+          <Contact />
         </div>
 
         <Footer />

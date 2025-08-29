@@ -23,50 +23,31 @@
   }
 }
 
+/* Gradient mask utility */
 .mask-image {
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   mask-repeat: no-repeat;
   mask-size: cover;
 }
 
 html {
   scroll-behavior: smooth;
-
+  max-width: 100%;
+  overflow-x: hidden; /* ✅ Prevents horizontal scrolling */
 }
 
-/* --- Typewriter animation utility (Tailwind v4) --- */
-@keyframes tw-typewriter {
-  from { width: 0 }
-  to { width: calc(var(--tw-typewriter-chars) * 1ch) }
+body {
+  max-width: 100%;
+  overflow-x: hidden; /* ✅ Ensures no right-side space */
 }
-
-@keyframes tw-caret {
-  50% { border-right-color: transparent }
-}
-
-/* animation-typewriting-* where * = number of characters */
-@utility animation-typewriting-* {
-  --tw-typewriter-chars: --value(integer); /* 👈 pulls the number from the class name */
-  display: inline-block;
-  white-space: nowrap;
-  overflow: hidden;
-  width: 0; /* start hidden, grow during animation */
-  border-right: 1px solid currentColor; /* caret */
-  animation:
-    tw-typewriter calc(var(--tw-typewriter-chars) * 0.08s)
-      steps(var(--tw-typewriter-chars)) forwards,
-    tw-caret 1s step-end infinite;
-}
-
-
-
-
-
-
-
-
-
-
